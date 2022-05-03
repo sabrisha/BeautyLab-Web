@@ -1095,7 +1095,7 @@ a {
   border-radius: 30px;
 }
 .button:hover {
-  border-color: #384aeb;
+  border-color: #CBD4C2;
   background: transparent;
   color: #222;
 }
@@ -1108,9 +1108,9 @@ a {
   background: #c5322d;
 }
 .button-register:hover {
-  background: #c5322d;
+  background: #CBD4C2;
   opacity: 0.7;
-  color: #fff;
+  color: rgb(39, 38, 38);
 }
 .blog-banner {
   position: relative;
@@ -1212,7 +1212,7 @@ a {
   transition: all 0.3s ease 0s;
 }
 .l_blog_item .l_blog_text h4:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .l_blog_item .l_blog_text p {
   margin-bottom: 0px;
@@ -3081,7 +3081,7 @@ a {
   height: 100%;
   width: 100%;
   content: "";
-  background: #384aeb;
+  background: #CBD4C2;
   opacity: 0.9;
 }
 .login_box_area .login_box_img .hover {
@@ -3988,7 +3988,7 @@ a {
   color: #999999;
 }
 .footer-area {
-  background: #515163;
+  background: #3e3f68;
   padding: 50px 0px 50px;
 }
 @media (min-width: 1000px) {
@@ -4041,7 +4041,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .tp_widgets .list li a:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .tp_widgets .list li:last-child {
   margin-bottom: 0px;

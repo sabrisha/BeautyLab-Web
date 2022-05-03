@@ -1404,7 +1404,7 @@ a {
   height: 1px;
 }
 .categories_post:hover .categories_details {
-  background: rgba(56, 74, 235, 0.85);
+  background: #CBD4C2;
 }
 .blog_item {
   margin-bottom: 40px;
@@ -1438,7 +1438,7 @@ a {
   vertical-align: middle;
 }
 .blog_info .blog_meta li a:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .blog_post img {
   max-width: 100%;
@@ -1454,7 +1454,7 @@ a {
   transition: all 0.3s linear;
 }
 .blog_details h2:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .blog_details p {
   margin-bottom: 26px;
@@ -1553,7 +1553,7 @@ a {
   margin-left: 20px;
 }
 .blog_right_sidebar .author_widget .social_icon a:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body {
   justify-content: center;
@@ -1568,7 +1568,7 @@ a {
   transition: all 0.3s linear;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
   font-size: 12px;
@@ -1595,10 +1595,10 @@ a {
   padding-top: 15px;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover {
-  border-color: #384aeb;
+  border-color: #CBD4C2;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover a {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .blog_right_sidebar .newsletter_widget {
   text-align: center;
@@ -1675,7 +1675,7 @@ a {
   font-size: 12px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #384aeb;
+  background: #CBD4C2;
   color: #fff;
 }
 .blog_right_sidebar .br {
@@ -1722,7 +1722,7 @@ a {
 .blog-pagination .page-link:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #384aeb;
+  background-color: #CBD4C2;
   border-color: #eee;
 }
 .single-post-area .social-links {
@@ -1914,7 +1914,7 @@ a {
   transition: all 0.3s ease 0s;
 }
 .comments-area .btn-reply:hover {
-  background-color: #384aeb;
+  background-color: #CBD4C2;
   color: #fff;
   font-weight: 700;
 }
@@ -2044,7 +2044,7 @@ a {
   padding: 10px 45px;
 }
 .contact-banner-btn:hover {
-  background: #384aeb;
+  background: #CBD4C2;
   color: #fff;
 }
 .contact-info__icon {
@@ -2146,6 +2146,7 @@ a {
 }
 .sidebar-categories .head {
   font-family: "Oswald", sans-serif;
+  min-width: fit-content;
   line-height: 50px;
   background: #384aeb;
   padding: 0 30px;
@@ -2168,7 +2169,7 @@ a {
   border-bottom: 1px solid #eee;
 }
 .sidebar-categories .main-nav-list a:hover {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .sidebar-categories .main-nav-list a .number {
   color: #cccccc;
@@ -2421,7 +2422,7 @@ a {
   font-weight: 400;
 }
 .single-search-product:hover .title {
-  color: #384aeb;
+  color: #CBD4C2;
 }
 .order-wrapper {
   background: #f1f6f7;
@@ -2707,7 +2708,7 @@ a {
   border-radius: 3px;
 }
 .tp_btn:hover {
-  background: #384aeb;
+  background: #CBD4C2;
   color: #fff;
   border-color: #384aeb;
 }
@@ -4090,4 +4091,35 @@ a {
     padding-top: 115px !important;
     padding-bottom: 115px !important;
   }
+}
+#dropZone {    
+  color: #555;
+  font-size: 18px;
+  text-align: center;    
+  
+  width: 400px;
+  padding: 50px 0;
+  margin: 50px auto;
+  
+  background: #eee;
+  border: 1px solid #ccc;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#dropZone.hover {
+  background: #ddd;
+  border-color: #aaa;
+}
+
+#dropZone.error {
+  background: #faa;
+  border-color: #f00;
+}
+
+#dropZone.drop {
+  background: #afa;
+  border-color: #0f0;
 }
