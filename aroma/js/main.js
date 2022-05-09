@@ -14,9 +14,9 @@ function register() {
   else if (password != confirmPassword)
     alert("Пароли не совпадают!");
   else {
-    handleSubmit(name, username, password);
-    //signup(name, username, password);
-    //alert("Добро пожаловать " + name + " !");
+    //handleSubmit(name, username, password);
+    signup(name, username, password);
+    alert("Добро пожаловать " + name + " !");
   }
 };
 function login() {
@@ -31,7 +31,7 @@ function login() {
     alert("Введите пароль!");
   else {
     //handleSubmit(name, username, password);
-    //signup(name, username, password);
+    signup(name, username, password);
     alert("Добро пожаловать " + name + " !");
   }
 };

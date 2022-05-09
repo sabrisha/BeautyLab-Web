@@ -92,11 +92,6 @@
                 <form action="#">
                   <ul>
                     <li class="filter-list"><input class="pixel-radio" type="radio" id="men" name="brand"><label for="men">Косметика<span> (1000)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="women" name="brand"><label for="women">Уход<span> (1600)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories" name="brand"><label for="accessories">Аксессуары<span> (600)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Здоровье<span> (1805)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="bayItem" name="brand"><label for="bayItem"><span>Корейская косметика</span><div> (105)</div></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Парфюмерия<span> (0)</span></label></li>
                     <li class="filter-list"><input id="bayItem" name="brand"><label for="bayItem">Добавить категорию</label></li>
                   </ul>
                 </form>
@@ -110,13 +105,6 @@
               <form action="#">
                 <ul>
                   <li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Revolution<span>(29)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="asus" name="brand"><label for="asus">Fenty<span>(29)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee" name="brand"><label for="gionee">Láncome<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax" name="brand"><label for="micromax">Vivienne Sabo<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Shiseido<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Frudia<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">CeraVe<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Clinique<span>(19)</span></label></li>
                   <li class="filter-list"><input id="samsung" name="brand"><label for="samsung">Добавить бренд</label></li>
                 </ul>
               </form>
@@ -126,11 +114,6 @@
               <form action="#">
                 <ul>
                   <li class="filter-list"><input class="pixel-radio" type="radio" id="black" name="color"><label for="black">Россия</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="balckleather" name="color"><label for="balckleather">США</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="blackred" name="color"><label for="blackred">Беларусь</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gold" name="color"><label for="gold">Корея</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Италия</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Франция</label></li>
                   <li class="filter-list"><input id="spacegrey" name="color"><label for="spacegrey">Добавить страну</label></li>
                 </ul>
               </form>
@@ -143,21 +126,21 @@
           <div class="filter-bar d-flex flex-wrap align-items-center">
             <div class="sorting">
               <select>
-                <option value="1">Сортировка по скидке</option>
-                <option value="1">Сортировка по алфавиту</option>
+                <option value="1" onaction="sortByDiscount()">Сортировка по скидке</option>
+                <option value="2" onaction="sortByAlph()" >Сортировка по алфавиту</option>
               </select>
             </div>
             <div class="sorting mr-auto">
               <select>
-                <option value="1">Показать 9</option>
-                <option value="1">Показать 12</option>
+                <option value="1" onaction="showNine()">Показать 9</option>
+                <option value="2" onaction="showTwelve()">Показать 12</option>
               </select>
             </div>
             <div>
               <div class="input-group filter-bar-search">
                 <input type="text" placeholder="Search">
                 <div class="input-group-append">
-                  <button type="button"><i class="ti-search"></i></button>
+                  <button type="button" onaction="searchProduct()"><i class="ti-search"></i></button>
                 </div>
               </div>
             </div>
@@ -167,137 +150,16 @@
           <section class="lattest-product-area pb-40 category-list">
             <div class="row">
               <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
+                <div class="card text-center card-product" onload="getProduct()">
                   <div class="card-product__img">
-                    <img class="card-img" src="img/product/lipRevolution.jpg" alt="">
                     <ul class="card-product__imgOverlay">
-                      <li><button><i>В наличии - 10</i></button></li>
+                      <li><button><i>$product_count</i></button></li>
                     </ul>
                   </div>
                   <div class="card-body">
-                    <p>Косметика</p>
-                    <h4 class="card-product__title"><a href="#">Кондиционер для губ</a></h4>
-                    <p class="card-product__price">50.1 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/6bffc6411c716b58729f6b7d87ca84a6.jpg.webp" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>Недостаточное количество!</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Средство для ухода в области глаз</a></h4>
-                    <p class="card-product__price">200.13 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/020714770020_1_cbjxjme1ylarbyff.jpg.webp" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>В наличии - 24</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Гель для нормальной кожи</a></h4>
-                    <p class="card-product__price">56.7 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/729238163805_1_ttwe0kq4yebjtd0q.jpg" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>Недостаточное количество!</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Увлажняющие патчи для лица</a></h4>
-                    <p class="card-product__price">100.2 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/768614178750_1_bqfgxhle4tcghugn.jpg" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>Недостаточное количество!</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Питательный крем-суфле</a></h4>
-                    <p class="card-product__price">250.90 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/3337875597227_1_tkzkktrqckvkgytp.jpg" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>В наличии - 40</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Крем для очень сухой кожи</a></h4>
-                    <p class="card-product__price">55.1 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/3337875597364_1_tz4v9uhzx6k3nyar.jpg.webp" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>В наличии - 20</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Уход</p>
-                    <h4 class="card-product__title"><a href="#">Лосьон для сухой кожи</a></h4>
-                    <p class="card-product__price">55.89 BYN</p>
-                  </div> 
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/3605532612768_1_3uucxs4yigcxjcwr.jpg.webp" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>Недостаточное количество!</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Аксессуары</p>
-                    <h4 class="card-product__title"><a href="#">Парфюм LaBelle</a></h4>
-                    <p class="card-product__price">321.55 BYN</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card text-center card-product">
-                  <div class="card-product__img">
-                    <img class="card-img" src="img/product/3614272629370_1_ogzfxifmexeby5ex.jpg.webp" alt="">
-                    <ul class="card-product__imgOverlay">
-                      <li><button><i>В наличии - 31</i></button></li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <p>Аксессуары</p>
-                    <h4 class="card-product__title"><a href="#">Духи WeLove</a></h4>
-                    <p class="card-product__price">303.1 BYN</p>
+                    <p>$category-list</p>
+                    <h4 class="card-product__title"><a href="#">$nameItem</a></h4>
+                    <p class="card-product__price">$price</p>
                   </div>
                 </div>
               </div>

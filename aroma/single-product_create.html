@@ -39,7 +39,7 @@
 					  aria-expanded="false">Каталог товаров</a>
 								</li>
 				  <li class="nav-item submenu dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					<a href="blog.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 					  aria-expanded="false">Новости</a>
 								</li>
 								<li class="nav-item submenu dropdown">
@@ -88,13 +88,9 @@
               <li class="common-filter">
                 <form action="#">
                   <ul>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="men" name="brand"><label for="men">Косметика<span> (1000)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="women" name="brand"><label for="women">Уход<span> (1600)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories" name="brand"><label for="accessories">Аксессуары<span> (600)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Здоровье<span> (1805)</span></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="bayItem" name="brand"><label for="bayItem"><span>Корейская косметика</span><div> (105)</div></label></li>
-                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Парфюмерия<span> (0)</span></label></li>
-                    <li class="filter-list"><input id="bayItem" name="brand"><label for="bayItem">Добавить категорию</label></li>
+                    <li class="filter-list" onload="getCategories()"><input class="pixel-radio" type="radio" id="categories" name="categories"><label for="categories">$name<span> (1000)</span></label></li>
+                    <li class="filter-list"><input id="bayItem" name="category"><label for="category">Добавить категорию</label></li>
+					
                   </ul>
                 </form>
               </li>
@@ -106,15 +102,8 @@
               <div class="head">Бренды</div>
               <form action="#">
                 <ul>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Revolution<span>(29)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="asus" name="brand"><label for="asus">Fenty<span>(29)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee" name="brand"><label for="gionee">Láncome<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax" name="brand"><label for="micromax">Vivienne Sabo<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Shiseido<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Frudia<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">CeraVe<span>(19)</span></label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Clinique<span>(19)</span></label></li>
-                  <li class="filter-list"><input id="samsung" name="brand"><label for="samsung">Добавить бренд</label></li>
+                  <li class="filter-list" onload="getBrands()"><input class="pixel-radio" type="radio" id="brands" name="brand"><label for="brands">$brandName<span>(29)</span></label></li>
+                  <li class="filter-list"><input id="brand" name="brand"><label for="brand">Добавить бренд</label></li>
                 </ul>
               </form>
             </div>
@@ -122,13 +111,8 @@
               <div class="head">Страна-производитель</div>
               <form action="#">
                 <ul>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="black" name="color"><label for="black">Россия</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="balckleather" name="color"><label for="balckleather">США</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="blackred" name="color"><label for="blackred">Беларусь</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gold" name="color"><label for="gold">Корея</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Италия</label></li>
-                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Франция</label></li>
-                  <li class="filter-list"><input id="spacegrey" name="color"><label for="spacegrey">Добавить страну</label></li>
+                  <li class="filter-list" onload="getCountries()"><input class="pixel-radio" type="radio" id="countries" name="countries"><label for="countries">$countryName</label></li>
+                  <li class="filter-list"><input id="spacegrey" name="country"><label for="spacegrey">Добавить страну</label></li>
                 </ul>
               </form>
             </div>
@@ -147,11 +131,11 @@
 				<div class="col-lg-5 offset-lg-1">
 					<div class="s_product_text">
 						<h6>Введите название товара</h6>
-						<input id="black" name="color">
+						<input id="nameItem" name="color">
 						<h6>Введите стоимость</h6>
-						<input id="black" name="color">
+						<input id="price" name="color">
 						<h6>Введите характеристики товара</h6>
-						<textarea id="new" cols="50" rows="10"></textarea>
+						<textarea id="description" cols="50" rows="10"></textarea>
 						<h6>Выберите цвет товара</h6>
 						<input type="color" value="#ff0000" id="colorWell">
 						<h6>Количество товара</h6>
@@ -161,7 +145,7 @@
 										   class="increase items-count" type="button"><i class="ti-angle-left"></i></button>
 										  <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
 										  <div class="col-md-12 form-group">
-											<button type="submit" value="submit" onaction="login" class="button button-login w-100">Сохранить</button>
+											<button type="submit" value="submit" onaction="saveItem()" class="button button-login w-100">Сохранить</button>
 										</div>			 
 									  </div>
 						
