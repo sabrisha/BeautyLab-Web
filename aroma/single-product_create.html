@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Details</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="new.css">
+  <script src="Drag-n-Drop/jquery.min.js"></script>
+<script src="Drag-n-Drop/jquery.client.js" charset="utf-8"></script>
+</head>
+<body>
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+		  <nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+			  <a class="navbar-brand logo_h" href="index.html"><img src="img/logo_white.png" alt=""></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+				<ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+				  <li class="nav-item"><a class="nav-link" href="index.html">На главную</a></li>
+				  <li class="nav-item active submenu dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					  aria-expanded="false">Каталог товаров</a>
+								</li>
+				  <li class="nav-item submenu dropdown">
+					<a href="blog.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					  aria-expanded="false">Новости</a>
+								</li>
+								<li class="nav-item submenu dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					  aria-expanded="false">Зарегистрировать менеджера</a>
+					<ul class="dropdown-menu">
+					  <li class="nav-item"><a class="nav-link" href="register.html">Регистрация</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item"><a class="nav-link" href="contact.html">Личный кабинет</a></li>
+				  <li class="nav-item"><a class="nav-link" href="contact.html">Выход</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		</div>
+	  </header>
+		<!--================ End Header Menu Area =================-->
+	
+		<!-- ================ start banner area ================= -->	
+		<section class="blog-banner-area" id="category">
+			<div class="container h-100">
+				<div class="blog-banner">
+					<div class="text-center">
+						<h1>Создать товар</h1>
+						<nav aria-label="breadcrumb" class="banner-breadcrumb">
+			  </nav>
+					</div>
+				</div>
+		</div>
+		</section>
+		<!-- ================ end banner area ================= -->
+
+
+  <!--================Single Product Area =================-->
+	<div class="product_image_area">
+		<div class="container">
+				<!-- ================ category section start ================= -->		  
+  <section class="section-margin--small mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+          <div class="sidebar-categories">
+            <div class="head">Выберите категорию</div>
+            <ul class="main-categories">
+              <li class="common-filter">
+                <form action="#">
+                  <ul>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="men" name="brand"><label for="men">Косметика<span> (1000)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="women" name="brand"><label for="women">Уход<span> (1600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="accessories" name="brand"><label for="accessories">Аксессуары<span> (600)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Здоровье<span> (1805)</span></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="bayItem" name="brand"><label for="bayItem"><span>Корейская косметика</span><div> (105)</div></label></li>
+                    <li class="filter-list"><input class="pixel-radio" type="radio" id="footwear" name="brand"><label for="footwear">Парфюмерия<span> (0)</span></label></li>
+					<li class="filter-list"><input class="pixel-radio" type="radio" id="bayItem" name="brand"><label for="bayItem"><span>Одежда</span><div> (0)</div></label></li>
+                    <li class="filter-list"><input id="bayItem" name="brand"><label for="bayItem">Добавить категорию</label></li>
+					
+                  </ul>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-filter">
+            <div class="top-filter-head">Выберите другие характеристики</div>
+            <div class="common-filter">
+              <div class="head">Бренды</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Revolution<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="asus" name="brand"><label for="asus">Fenty<span>(29)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gionee" name="brand"><label for="gionee">Láncome<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="micromax" name="brand"><label for="micromax">Vivienne Sabo<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Shiseido<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Frudia<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">CeraVe<span>(19)</span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Clinique<span>(19)</span></label></li>
+                  <li class="filter-list"><input id="samsung" name="brand"><label for="samsung">Добавить бренд</label></li>
+                </ul>
+              </form>
+            </div>
+            <div class="common-filter">
+              <div class="head">Страна-производитель</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="black" name="color"><label for="black">Россия</label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="balckleather" name="color"><label for="balckleather">США</label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="blackred" name="color"><label for="blackred">Беларусь</label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="gold" name="color"><label for="gold">Корея</label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Италия</label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="spacegrey" name="color"><label for="spacegrey">Франция</label></li>
+                  <li class="filter-list"><input id="spacegrey" name="color"><label for="spacegrey">Добавить страну</label></li>
+                </ul>
+              </form>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-md-7">
+        
+			<div class="row s_product_inner">
+				<div class="col-lg-6">
+						<div class="single-prd-item">
+							<h6>Выберите картинку для товара</h6>
+							<input type="file" id="fileUpload0" multiple="true" size="300">
+						</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<div class="s_product_text">
+						<h6>Введите название товара</h6>
+						<input id="black" name="color">
+						<h6>Введите стоимость</h6>
+						<input id="black" name="color">
+						<h6>Введите характеристики товара</h6>
+						<textarea id="new" cols="50" rows="10"></textarea>
+						<h6>Выберите цвет товара</h6>
+						<input type="color" value="#ff0000" id="colorWell">
+						<h6>Количество товара</h6>
+						<div class="product_count">
+							<label for="qty"><h4>Заказать товар со склада</h4></label>
+							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+										   class="increase items-count" type="button"><i class="ti-angle-left"></i></button>
+										  <input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+										  <div class="col-md-12 form-group">
+											<button type="submit" value="submit" onaction="login" class="button button-login w-100">Сохранить</button>
+										</div>			 
+									  </div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!--================End Single Product Area =================-->
+
+ <!--================ Start footer Area  =================-->	
+ <footer>
+	<div class="footer-area footer-only">
+		<div class="container">
+			<div class="row section_gap">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget tp_widgets ">
+						<h4 class="footer_title large_title">О нас</h4>
+						<p>
+							Данный ресурс предоставляет доступ администраторам онлайн-магазина 'BeautyLab' к ведению складского учета, отслеживания процессов покупок товаров и поддержке бизнеса.
+						</p>
+						<p>
+						Если Вы являетесь покупателем, рекомендуем установить приложение нашего магазина на Ваш телефон. С любовью, команда BeautyLab! 	
+						</p>
+					</div>
+				</div>
+				
+				
+				<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget tp_widgets">
+						<h4 class="footer_title">Свяжитесь с нами:</h4>
+						<div class="ml-40">
+							<p class="sm-head">
+								<span class="fa fa-location-arrow"></span>
+								Главный офис
+							</p>
+							<p>г. Минск, ул. Гикало 22/1</p>
+
+							<p class="sm-head">
+								<span class="fa fa-phone"></span>
+								Контактные номера телефонов
+							</p>
+							<p>
+								+375 29 295-67-86 <br>
+								+375 29 789-00-99
+							</p>
+
+							<p class="sm-head">
+								<span class="fa fa-envelope"></span>
+								Email
+							</p>
+							<p>
+								blab@gmail.com <br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row d-flex">
+				<p class="col-lg-12 footer-text text-center">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | BeautyLab Co. <i class="fa fa-heart" aria-hidden="true"></i></a>
+</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--================ End footer Area  =================-->
