@@ -78,28 +78,26 @@
 			<div class="row s_product_inner">
 				<div class="col-lg-6">
 						<div class="single-prd-item">
-							<img src="img/product/6bffc6411c716b58729f6b7d87ca84a6.jpg.webp" height="500" width="500">
 						</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
-					<div class="s_product_text">
-						<h3>Средство для ухода в области глаз</h3>
-						<h2>200.13 BYN</h2>
+					<div class="s_product_text" onload="getItemInfo()">
+						<h3>$description</h3>
+						<h2>$count</h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span><h4>Категория</h4></span> <b>: Косметика</b></a></li>
-							<li><a href="#"><span><h4>Есть в наличии</h4></span><b> : 34</b></a></li>
+							<li><a class="active" href="#"><span><h4>Категория</h4></span><b>$category</b></a></li>
+							<li><a href="#"><span><h4>Есть в наличии</h4></span><b>$product_count</b></a></li>
 						</ul>
-						<h5>Формула с витамином E, касторовым маслом, маслами ши и авокадо отлично увлажняет и смягчает кожу, подготавливает губы к нанесению макияжа и оставляет ощущение лёгкости и комфорта. Мягкий, объемный аппликатор обеспечивает легкое нанесение. Средство имеет приятный медовый аромат и оставляет нежный глянцевый финиш. Не тестируется на животных</h5>
+						<h5 ></h5>
 						<div class="product_count">
               <label for="qty"><h4>Заказать товар со склада:</h4></label>
               <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
 							 class="increase items-count" type="button"><i class="ti-angle-left"></i></button>
 							<input type="text" name="qty" id="sst" size="2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" onaction="login" class="button button-login w-100">Редактировать</button>
+								<button type="submit" value="submit" href="single-product-edit.html" class="button button-login w-100">Редактировать</button>
 							</div>		   
 						</div>
-						
 					</div>
 				</div>
 			</div>
